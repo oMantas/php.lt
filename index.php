@@ -1,5 +1,6 @@
 <?php
 $rand_color = rand(0,255);
+$rand_color1 = rand(0,255);
 $rand_size = rand(20,60);
 ?>
 <!DOCTYPE html>
@@ -12,6 +13,6 @@ $rand_size = rand(20,60);
     </head>
     <body style="background-color: rgb(<?php print "$rand_color,$rand_color,$rand_color";?>)">
         <h1 style="font-size:<?php print "$rand_size";?>px">As keiciu savo dydi!</h1>
-        <p style="color: rgb(<?php print "$rand_color,$rand_color,$rand_color";?>)(">As keiciu savo spalva!</p>
+        <p style="color: rgb(<?php print "$rand_color1,$rand_color1,$rand_color1";?>)">As keiciu savo spalva!</p>
     </body>
 </html>
