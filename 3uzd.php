@@ -1,8 +1,5 @@
-<?php
-
-?>
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +7,11 @@
         <title>Komentarai</title>
     </head>
     <body>
-        <div><!-- <?php print "belekas"?> --></div>
-        <div>Kazkas</div>
+    <!-- nereikalingas div -->
+        <div>
+            <h1>As pradedu</h1>
+            <h2>O as papildau</h2>
+        </div>
+        <!-- <div>Belekas</div> -->
     </body>
 </html>
