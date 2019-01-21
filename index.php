@@ -7,10 +7,11 @@
         <title>Komentarai</title>
     </head>
     <body>
-        <div>
+    <!-- uzkomentuotas nereikalingas div -->
+        <!-- <div>
             <h1>As pradedu</h1>
             <h2>O as papildau</h2>
-        </div>
+        </div> -->
         <p>Belekas</p>
     </body>
 </html>
