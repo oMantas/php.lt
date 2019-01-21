@@ -1,18 +1,17 @@
 <?php
-$random = rand(1,10);
-$random2 = rand(1,5);
-$random3 = rand(2,10);
+$rand_color = rand(0,255);
+$rand_size = rand(20,60);
 ?>
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>PHP lydes ir <?php print date('Y.m.d', strtotime("$random year"));?></title>
+        <title>Document</title>
     </head>
-    <body>
-       <h1>Mantas - galbut turesiu <?php print "$random2";?> vaiku.</h1>
-       <p>D.Trumpas nebebus prezidentu <?php print date('Y.m.d', strtotime("$random3 year"));?></p>
+    <body style="background-color: rgb(<?php print "$rand_color,$rand_color,$rand_color";?>)">
+        <h1 style="font-size:<?php print "$rand_size";?>px">As keiciu savo dydi!</h1>
+        <p style="color: rgb(<?php print "$rand_color,$rand_color,$rand_color";?>)(">As keiciu savo spalva!</p>
     </body>
 </html>
