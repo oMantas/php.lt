@@ -12,13 +12,13 @@ $bomb_size = 100 + date('s');
         <link rel="stylesheet" href="css/bomb.css">
         <style>
             img {
-                height: <?php print $bomb_size?>px;
-                width: <?php print $bomb_size?>px;
+                height: <?php print $bomb_size; ?>px;
+                width: <?php print $bomb_size; ?>px;
             }
         </style>
     </head>
     <body>
         <img src='../img/bomb.png'>
-        <p><?php print $seconds;?></p>
+        <p><?php print $seconds; ?></p>
     </body>
 </html>
