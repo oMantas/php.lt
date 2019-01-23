@@ -21,7 +21,17 @@ for($i = 0; $i < $days; $i++) {
 
 $viso_kaina = round($viso_vnt * $cig_cost, 2);
 $mon_thu_kaina = round($mon_thu_smoked_cig_per_year * $cig_cost, 2);
-
-print "<p>Per metus surukysiu $viso_vnt cigareciu uz $viso_kaina eur.</p>";
-print "<p>Nerukydamas Pirmad-Ketvirtadieni sutaupyciau $mon_thu_kaina eur.</p>";
 ?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <p><?php print "Per metus surukysiu $viso_vnt cigareciu uz $viso_kaina eur."; ?></p>
+        <p><?php print "Nerukydamas Pirmad-Ketvirtadieni sutaupyciau $mon_thu_kaina eur."; ?></p>
+    </body>
+</html>
