@@ -1,10 +1,11 @@
 <?php
-$sudo_receptas = [
-    'Kiausiniai' => ['dideli' => 2],
-    'Baklazanas' => ['mazas' => 1],
-    'Grietines indelis' => ['didelis' => 1],
+$belekas = [
+    'Asmuo' => [
+        'Petras Pirdzius' => ['Kas vyksta' => 'prapistas tel'],
+        'Tomas Ablomas' => ['Kas vyksta' => 'naudojamas buljonas'],
+        'Ana Shitkova' => ['Kas vyksta' => 'pasibaiges rulonas'],
+    ]
 ];
 
-var_dump($sudo_receptas);
-
+var_dump($belekas);
 ?>
