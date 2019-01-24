@@ -1,10 +1,19 @@
 <?php
 $belekas = [
-    'Asmuo' => [
-        'Petras Pirdzius' => ['daiktai' => 'prapistas tel'],
-        'Tomas Ablomas' => ['daiktai' => 'naudojamas buljonas'],
-        'Ana Shitkova' => ['daiktai' => 'pasibaiges rulonas'],
+    'Petras Pirdzius' => [
+        'ka turi?' => 'telefona',
+        'koki?' => 'prapista',
+    ],
+    'Tomas Ablomas' => [
+        'ka turi?' => 'buljona',
+        'koki?' => 'naudojama',
+    ],
+    'Ana Shitkova' => [
+        'ka turi?' => 'rolona',
+        'koki?' => 'pasibaigusi',
     ]
+
+        
 ];
 
 var_dump($belekas);
