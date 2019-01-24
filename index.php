@@ -1,10 +1,10 @@
 <?php
 $sudo_receptas = [
-    'Dideli kiausiniai' => '2vnt',
-    'Mazasa baklazanas' => '1vnt',
-    'Didelis grietines indelis' => '1vnt',
+    'Kiausiniai' => [2, 'dideli'],
+    'Baklazanas' => [1, 'mazas'],
+    'Grietines indelis' => [1, 'didelis'],
 ];
 
-print var_dump($sudo_receptas);
+var_dump($sudo_receptas);
 
 ?>
