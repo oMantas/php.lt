@@ -4,9 +4,10 @@
     flex-wrap: wrap;
 }
 .cigImg {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     background-image: url(../img/cig.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    border: 1px solid black;
 }

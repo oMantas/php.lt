@@ -26,7 +26,7 @@ $viso_hour = round($viso_vnt * $rukymo_laikas/60);
 
 $cig_div = '';
 for($i = 0; $i < $viso_vnt; $i++) {
-    $cig_div .= "<div class='cigImg'></div>";
+    $cig_div .= "<div class='cigImg'>$i</div>";
 }
 ?>
 <!DOCTYPE html>
