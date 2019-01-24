@@ -1,19 +1,19 @@
 <?php
 $belekas = [
     'zmogus1' => [
-        'Vardas Pavarde' => 'Petras Pirdzius',
-        'ka turi?' => 'telefona',
-        'koki?' => 'prapista',
+        'vardas_pavarde' => 'Petras Pirdzius',
+        'ka_turi' => 'telefona',
+        'koki' => 'prapista',
     ],
     'zmogus2' => [
-        'Vardas Pavarde' => 'Tomas Ablomas',
-        'ka turi?' => 'buljona',
-        'koki?' => 'naudojama',
+        'vardas_pavarde' => 'Tomas Ablomas',
+        'ka_turi' => 'buljona',
+        'koki' => 'naudojama',
     ],
     'zmogus3' => [
-        'Vardas Pavarde' => 'Ana Shitkova',
-        'ka turi?' => 'rulona',
-        'koki?' => 'pasibaigusi',
+        'vardas_pavarde' => 'Ana Shitkova',
+        'ka_turi' => 'rulona',
+        'koki' => 'pasibaigusi',
     ],     
 ];
 
