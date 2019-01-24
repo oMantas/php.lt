@@ -1,0 +1,12 @@
+#flexContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cigImg {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/cig.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
