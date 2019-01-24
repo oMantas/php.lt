@@ -11,9 +11,7 @@ $belekas = [
     'Ana Shitkova' => [
         'ka turi?' => 'rolona',
         'koki?' => 'pasibaigusi',
-    ]
-
-        
+    ]      
 ];
 
 var_dump($belekas);
