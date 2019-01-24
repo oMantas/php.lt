@@ -3,6 +3,7 @@ $days = 365;
 $cig_cost = 3.50 / 20;
 $viso_vnt = 0;
 $mon_thu_smoked_cig_per_year = 0;
+$rukymo_laikas = 5; //min
 
 for($i = 0; $i < $days; $i++) {
     $weekday = date('N', strtotime("+$i day"));
@@ -21,6 +22,7 @@ for($i = 0; $i < $days; $i++) {
 
 $viso_kaina = round($viso_vnt * $cig_cost, 2);
 $mon_thu_kaina = round($mon_thu_smoked_cig_per_year * $cig_cost, 2);
+$viso_hour = round($viso_vnt * $rukymo_laikas/60);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,5 +35,6 @@ $mon_thu_kaina = round($mon_thu_smoked_cig_per_year * $cig_cost, 2);
     <body>
         <p><?php print "Per metus surukysiu $viso_vnt cigareciu uz $viso_kaina eur."; ?></p>
         <p><?php print "Nerukydamas Pirmad-Ketvirtadieni sutaupyciau $mon_thu_kaina eur."; ?></p>
+        <p><?php print "Per metus prastovesiu traukdamas $viso_hour valandu."; ?></p>
     </body>
 </html>
