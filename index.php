@@ -6,7 +6,7 @@ $mano_atmintis = [
 $array_length = count($mano_atmintis);
 $rand = rand(0, $array_length - 1);
 
-$draugo_atmintis = [
+$zmonos_atmintis = [
     'Penktadienis', 'miegojau', 'atsikeliau',
     'valgiau', 'geriau', 'viska atsimena'
 ];
@@ -32,9 +32,9 @@ $draugo_atmintis = [
                 </li>
             <?php endforeach; ?>
         </ul>
-        <h2>Draugo atmintis</h2>
+        <h2>Zmonos atmintis</h2>
         <ul>
-            <?php foreach ($draugo_atmintis as $value): ?>
+            <?php foreach ($zmonos_atmintis as $value): ?>
                 <li>
                     <?php print $value; ?>
                 </li>
