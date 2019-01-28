@@ -48,9 +48,13 @@ $dishes = [
                 <td>Ingredients</td>
                 <?php foreach ($dishes as $dish): ?>
                     <td>
-                        <?php foreach ($dish['ingredients'] as $value): ?>
-                            <?php print "$value <br>"; ?>
-                        <?php endforeach; ?>
+                        <ul>
+                            <?php foreach ($dish['ingredients'] as $value): ?>
+                                <li>
+                                    <?php print "$value"; ?>
+                                </li>
+                            <?php endforeach; ?>
+                        <ul>
                     </td>
                 <?php endforeach; ?>
             </tr>
@@ -58,7 +62,9 @@ $dishes = [
                 <td>Photo</td>
                 <?php foreach ($dishes as $dish): ?>
                         <?php foreach ($dish['photo'] as $value): ?>
-                            <td class='bgImg' style='background-image: url(/img/<?php print $value; ?>)'></td>
+                            <td>
+                                <img src='/img/<?php print $value; ?>'>
+                            </td>
                         <?php endforeach; ?>
                 <?php endforeach; ?>
             </tr>
