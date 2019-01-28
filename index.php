@@ -1,7 +1,8 @@
 <?php
 $mano_atmintis = [
     'Penktadienis', 'miegojau', 'atsikeliau',
-    'valgiau', 'geriau', 'viskas blanku', 'miegojau'];
+    'valgiau', 'geriau', 'viskas blanku', 'miegojau'
+];
 $array_length = count($mano_atmintis);
 $rand = rand(0, $array_length - 1);
 
