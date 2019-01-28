@@ -17,15 +17,15 @@ $rand = rand(0, $array_length - 1);
         <h1>WTF?!</h1>
         <h2>Mano atmintis</h2>
         <h3>
-            <?php print $mano_atmintis[$rand];?>
+            <?php print $mano_atmintis[$rand]; ?>
         </h3>
         <p>
             <ul>
                 <?php foreach ($mano_atmintis as $value): ?>
                     <li>
-                        <?php print $value;?>
+                        <?php print $value; ?>
                     </li>
-                <?php endforeach;?>
+                <?php endforeach; ?>
             </ul>
         </p>
     </body>
