@@ -4,11 +4,6 @@ $mano_atmintis = [
     'valgiau', 'geriau', 'viskas blanku', 'miegojau'];
 $array_length = count($mano_atmintis);
 $rand = rand(0, $array_length - 1);
-
-$draugo_atmintis = [
-    'Penktadienis', 'miegojau', 'atsikeliau',
-    'valgiau', 'geriau', 'viska atsimena'
-];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,20 +19,14 @@ $draugo_atmintis = [
         <h3>
             <?php print $mano_atmintis[$rand]; ?>
         </h3>
-        <ul>
-            <?php foreach ($mano_atmintis as $value): ?>
-                <li>
-                    <?php print $value; ?>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-        <h2>Draugo atmintis</h2>
-        <ul>
-            <?php foreach ($draugo_atmintis as $value): ?>
-                <li>
-                    <?php print $value; ?>
-                </li>
-            <?php endforeach; ?>
-        </ul>
+        <p>
+            <ul>
+                <?php foreach ($mano_atmintis as $value): ?>
+                    <li>
+                        <?php print $value; ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </p>
     </body>
 </html>
