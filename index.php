@@ -1,19 +1,8 @@
 <?php
-$dishes = [
-    [
-        'name' => 'Nut salad',
-        'price' => 3.44,
-        'ingredients' => ['Nuts', 'Yogurt', 'Fruits'],
-        'photo' => ['nutSalad.jpg'],
-    ],
-    [
-        'name' => 'Chujnia',
-        'price' => 4.77,
-        'ingredients' => ['Rice', 'Soya Sauce', 'Sausage'],
-        'photo' => ['chujnia.jpg'],
-    ],
-];
-
+function add($x, $y) {
+    return $x + $y;
+};
+$suma = add(2, 2);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,52 +11,10 @@ $dishes = [
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
-        <link rel="stylesheet" href="css/dish.css">
     </head>
     <body>
-        <table>
-            <tr>
-                <td><span>Dishes</span></td>
-                <?php foreach ($dishes as $dish): ?>
-                    <th>
-                        <span class='tblHead'>
-                            <?php print $dish['name']; ?>
-                        </span>
-                    </th>
-                <?php endforeach; ?>
-            </tr>
-            <tr>
-                <td>Price (eur)</td>
-                <?php foreach ($dishes as $dish): ?>
-                    <td>
-                        <span><?php print $dish['price']; ?></span>
-                    </td>
-                <?php endforeach; ?>
-            </tr>
-            <tr>
-                <td>Ingredients</td>
-                <?php foreach ($dishes as $dish): ?>
-                    <td>
-                        <ul>
-                            <?php foreach ($dish['ingredients'] as $value): ?>
-                                <li>
-                                    <?php print "$value"; ?>
-                                </li>
-                            <?php endforeach; ?>
-                        <ul>
-                    </td>
-                <?php endforeach; ?>
-            </tr>
-            <tr id='photoRow'>
-                <td>Photo</td>
-                <?php foreach ($dishes as $dish): ?>
-                        <?php foreach ($dish['photo'] as $value): ?>
-                            <td>
-                                <img src='/img/<?php print $value; ?>'>
-                            </td>
-                        <?php endforeach; ?>
-                <?php endforeach; ?>
-            </tr>
-        </table>
+        <h1>
+            <?php print "Suma: $suma"; ?>
+        </h1>
     </body>
 </html>
