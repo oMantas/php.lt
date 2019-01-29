@@ -1,7 +1,7 @@
 <?php
 function add($x, $y){
     $suma = $x + $y;
-     return 'Suma:'. $suma;
+     print 'Suma:'. $suma;
 };
 ?>
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ function add($x, $y){
     </head>
     <body>
         <h1>
-            <?php print add(2, 2); ?>
+            <?php add(2, 2); ?>
         </h1>
     </body>
 </html>
