@@ -1,6 +1,7 @@
 <?php
-function add($x, $y) {
-    return $x + $y;
+function add($x, $y){
+    $suma = $x + $y;
+     print 'Suma:'. $suma;
 };
 $suma = add(2, 2);
 ?>
@@ -14,7 +15,7 @@ $suma = add(2, 2);
     </head>
     <body>
         <h1>
-            <?php print "Suma: $suma"; ?>
+            <?php $suma; ?>
         </h1>
     </body>
 </html>
