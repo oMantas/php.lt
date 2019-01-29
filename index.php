@@ -3,7 +3,6 @@ function add($x, $y){
     $suma = $x + $y;
      print 'Suma:'. $suma;
 };
-$suma = add(2, 2);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +14,7 @@ $suma = add(2, 2);
     </head>
     <body>
         <h1>
-            <?php $suma; ?>
+            <?php add(2, 2); ?>
         </h1>
     </body>
 </html>
