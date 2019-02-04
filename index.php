@@ -30,6 +30,8 @@ function change_color($bbd, $l) {
         } else {
             $bbd[$key]['color'] = 'grey';
         }
+
+        $bbd[$key]['show_text'] = true;
     }
 
     return $bbd;
