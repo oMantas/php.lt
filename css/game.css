@@ -1,0 +1,20 @@
+.rows {
+    width: 400px;
+    height: 100px;;
+    display: flex;
+    margin-bottom: 10px;
+}
+.cols {
+    width: 30%;
+    height: 100%;
+    margin: auto;
+}
+.color-0 {
+    background-color: skyblue;
+}
+.color-1 {
+    background-color: yellow;
+}
+.winRow {
+    border: 1px solid red;
+}
