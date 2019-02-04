@@ -32,12 +32,12 @@ $bbd = [
         <link rel="stylesheet" href="css/bbd.css">
     </head>
     <body>
-        <div id="flexContainer">
+        <div id="flex_container">
             <?php foreach ($bbd as $key => $value): ?>
                 <div class='block <?php print $bbd[$key]['color'].' '. $bbd[$key]['form']; ?>'>
-                    <p>
+                    <span>
                         <?php print $bbd[$key]['text']; ?>
-                    </p>
+                    </span>
                 </div>
             <?php endforeach; ?>
         </div>

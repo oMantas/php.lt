@@ -1,4 +1,4 @@
-#flexContainer {
+#flex_container {
     display: flex;
 }
 .block {
@@ -6,9 +6,11 @@
     height: 50px;
     border: 1px solid black;
     margin: 10px;
+    display: flex;
+    justify-content: center;
 }
-p {
-    text-align: center;
+span {
+    margin-top: 15px;
 }
 .green {
     background-color: green;
