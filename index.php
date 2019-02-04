@@ -21,6 +21,18 @@ $bbd = [
         'form' => 'kvadratas',
     ],  
 ];
+
+function change_color($bbd) {
+
+    foreach ($bbd as &$param) {
+        $param['color'] = 'red';
+    }
+
+    return $bbd;
+};
+
+$bbd = change_color($bbd);
+var_dump($bbd);
 ?>
 <!DOCTYPE html>
 <html lang="en">
