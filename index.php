@@ -19,8 +19,7 @@ $bbd = [
         'text' => 'd',
         'color' => 'red',
         'form' => 'kvadratas',
-    ],
-    
+    ],  
 ];
 ?>
 <!DOCTYPE html>
