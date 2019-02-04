@@ -53,9 +53,11 @@ var_dump($bbd);
         <div id="flex-container">
             <?php foreach ($bbd as $param): ?>
                 <div class='block <?php print $param['color'].' '. $param['form']; ?>'>
-                    <span>
-                        <?php print $param['text']; ?>
-                    </span>
+                    <?php if ($param['show_text'] == true): ?>
+                        <span>
+                            <?php print $param['text']; ?>
+                        </span>
+                    <?php endif; ?>
                 </div>
             <?php endforeach; ?>
         </div>
