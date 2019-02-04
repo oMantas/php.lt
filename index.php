@@ -1,16 +1,28 @@
 <?php
 $bbd = [
-    'color' => [
-        'green', 'orange', 'red'
+    [
+        'text' => 'as',
+        'color' => 'green',
+        'form' => 'apskritimas',
     ],
-    'words' => [
-        'as', 'b', 'b', 'd'
+    [
+        'text' => 'b',
+        'color' => 'green',
+        'form' => 'kvadratas',
     ],
-    'form' => [
-        'apkskritimas', 'kvadratas'
-    ]
+    [
+        'text' => 'b',
+        'color' => 'orange',
+        'form' => 'kvadratas',
+    ],
+    [
+        'text' => 'd',
+        'color' => 'red',
+        'form' => 'kvadratas',
+    ],
+    
 ];
-var_dump($bbd);
+/* var_dump($bbd); */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,8 +31,19 @@ var_dump($bbd);
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
+        <link rel="stylesheet" href="css/bbd.css">
     </head>
     <body>
-        
+        <div id="flexContainer">
+            <?php foreach ($bbd as $key => $value): ?>
+                <div class='block <?php print $bbd[$key]['color'].' '. $bbd[$key]['form']; ?>'>
+                    <p>
+                        <?php print $bbd[$key]['text']; ?>
+                    </p>
+                </div>
+            <?php endforeach; ?>
+        </div>
     </body>
 </html>
+
+   
