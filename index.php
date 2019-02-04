@@ -22,7 +22,6 @@ $bbd = [
     ],
     
 ];
-/* var_dump($bbd); */
 ?>
 <!DOCTYPE html>
 <html lang="en">
