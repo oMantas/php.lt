@@ -31,8 +31,10 @@ function change_color($bbd, $l) {
             $bbd[$key]['color'] = 'grey';
         }
 
-        $bbd[$key]['show_text'] = true;
+        $bbd[$key]['show_text'] = false;
     }
+
+    $bbd[$l]['show_text'] = true;
 
     return $bbd;
 };
@@ -53,7 +55,7 @@ var_dump($bbd);
         <div id="flex-container">
             <?php foreach ($bbd as $param): ?>
                 <div class='block <?php print $param['color'].' '. $param['form']; ?>'>
-                    <?php if ($param['show_text'] == true): ?>
+                    <?php if ($param['show_text']): ?>
                         <span>
                             <?php print $param['text']; ?>
                         </span>
