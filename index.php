@@ -23,11 +23,9 @@ $bbd = [
 ];
 
 function change_color($bbd, $l) {
-    $bbd[$l]['color'] = 'red';
-
+    
     foreach ($bbd as $key => $param) {
-
-        if ($bbd[$key]['color'] < $bbd[$l]['color']) {
+        if ($key < $l) {
             $bbd[$key]['color'] = 'red';
         } else {
             $bbd[$key]['color'] = 'grey';
