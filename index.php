@@ -22,6 +22,13 @@ $bbd = [
     ],  
 ];
 
+$day_story = [
+    'Dienos pradzia', 
+    'Pirmo lvl istorija', 
+    'Antro lvl istorija', 
+    'Trecio lvl istorija'
+];
+
 function change_color($bbd, $l) {
     foreach ($bbd as $key => $param) {
         if ($key < $l) {
@@ -38,8 +45,23 @@ function change_color($bbd, $l) {
     return $bbd;
 };
 
+function nx_story($day_story, $l) {
+    $text = [];
+
+    foreach ($day_story as $key => $story) {
+        if ($key <= $l) {
+            $text[] = $story;
+        }
+    }
+
+    return $text;
+};
+
+$l = rand(0, 3);
+$nx = nx_story($day_story, $l);
 $bbd = change_color($bbd, 2);
-var_dump($bbd);
+/* var_dump($bbd); */
+var_dump($nx);
 ?>
 <!DOCTYPE html>
 <html lang="en">
