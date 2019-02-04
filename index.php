@@ -26,9 +26,10 @@ function change_color($bbd, $l) {
 
     foreach ($bbd as $key => $param) {
         $bbd[$key]['color'] = 'grey';
-        $bbd[$l]['color'] = 'red';
     }
 
+    $bbd[$l]['color'] = 'red';
+    
     return $bbd;
 };
 
