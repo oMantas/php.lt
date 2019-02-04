@@ -21,6 +21,9 @@ span {
 .red {
     background-color: red;
 }
+.grey {
+    background-color: grey;
+}
 .apskritimas {
     border-radius: 50%;
 }

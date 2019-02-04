@@ -22,16 +22,17 @@ $bbd = [
     ],  
 ];
 
-function change_color($bbd) {
+function change_color($bbd, $l) {
 
-    foreach ($bbd as &$param) {
-        $param['color'] = 'red';
+    foreach ($bbd as $key => $param) {
+        $bbd[$key]['color'] = 'grey';
+        $bbd[$l]['color'] = 'red';
     }
 
     return $bbd;
 };
 
-$bbd = change_color($bbd);
+$bbd = change_color($bbd, 0);
 var_dump($bbd);
 ?>
 <!DOCTYPE html>
