@@ -22,18 +22,33 @@ $bbd = [
     ],  
 ];
 
-function change_color($bbd, $l) {
+/* function change_color($bbd, $l) {
 
     foreach ($bbd as $key => $param) {
         $bbd[$key]['color'] = 'grey';
     }
 
     $bbd[$l]['color'] = 'red';
+
+    return $bbd;
+}; */
+
+function change_color($bbd, $l) {
+    $bbd[$l]['color'] = 'red';
     
+    foreach ($bbd as $key => $param) {
+
+        if ($bbd[$key]['color'] < $bbd[$l]['color']) {
+            $bbd[$key]['color'] = 'red';
+        } else {
+            $bbd[$key]['color'] = 'grey';
+        }
+    }
+
     return $bbd;
 };
 
-$bbd = change_color($bbd, 0);
+$bbd = change_color($bbd, 2);
 var_dump($bbd);
 ?>
 <!DOCTYPE html>
