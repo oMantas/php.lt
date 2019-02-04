@@ -1,7 +1,7 @@
 <?php
 $bbd = [
     [
-        'text' => 'as',
+        'text' => 'As',
         'color' => 'green',
         'form' => 'apskritimas',
     ],
@@ -19,63 +19,40 @@ $bbd = [
         'text' => 'd',
         'color' => 'red',
         'form' => 'kvadratas',
-    ],  
+    ],
 ];
 
-$day_story = [
-    'Dienos pradzia', 
-    'Pirmo lvl istorija', 
-    'Antro lvl istorija', 
-    'Trecio lvl istorija'
-];
-
-function change_color($bbd, $l) {
-    foreach ($bbd as $key => $param) {
-        if ($key < $l) {
-            $bbd[$key]['color'] = 'red';
-        } else {
-            $bbd[$key]['color'] = 'grey';
-        }
-
-        $bbd[$key]['show_text'] = false;
-    }
-
-    $bbd[$l]['show_text'] = true;
-
-    return $bbd;
-};
-
-function nx_story($day_story, $l) {
-    $text = [];
-
-    foreach ($day_story as $key => $story) {
+function color_change($arr, $l) {
+    foreach ($arr as $key => &$param) {
         if ($key <= $l) {
-            $text[] = $story;
-        }
-    }
+            $param['color'] = 'red';
+        } else {
+            $param['color'] = 'grey';
+        };
 
-    return $text;
+        $param['show_text'] = false;
+        $arr[$l]['show_text'] = true;
+    };
+
+    return $arr;
 };
 
-$l = rand(0, 3);
-$nx = nx_story($day_story, $l);
-$bbd = change_color($bbd, 2);
+$bbd = color_change($bbd, 1);
 /* var_dump($bbd); */
-var_dump($nx);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
-        <link rel="stylesheet" href="css/bbd.css">
+        <link rel="stylesheet" href="css/bbd2.css">
     </head>
     <body>
-        <div id="flex-container">
+        <div class='flex-container'>
             <?php foreach ($bbd as $param): ?>
-                <div class='block <?php print $param['color'].' '. $param['form']; ?>'>
+                <div class='block <?php print $param['form'].' '.$param['color']; ?>'>
                     <?php if ($param['show_text']): ?>
                         <span>
                             <?php print $param['text']; ?>
@@ -86,5 +63,3 @@ var_dump($nx);
         </div>
     </body>
 </html>
-
-   
