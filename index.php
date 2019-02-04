@@ -33,10 +33,10 @@ $bbd = [
     </head>
     <body>
         <div id="flex-container">
-            <?php foreach ($bbd as $key => $value): ?>
-                <div class='block <?php print $bbd[$key]['color'].' '. $bbd[$key]['form']; ?>'>
+            <?php foreach ($bbd as $param): ?>
+                <div class='block <?php print $param['color'].' '. $param['form']; ?>'>
                     <span>
-                        <?php print $bbd[$key]['text']; ?>
+                        <?php print $param['text']; ?>
                     </span>
                 </div>
             <?php endforeach; ?>
