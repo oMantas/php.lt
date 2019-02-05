@@ -1,10 +1,12 @@
 <?php
 $x = 0;
-$b = &$x;
-unset($b);
-$b = 1;
 
+function change_x(&$x) {
+    $x = 1;
+};
+change_x($x);
 print $x;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
