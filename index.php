@@ -1,20 +1,10 @@
 <?php
-$x = 0;
-$b = &$x;
-unset($b);
-$b = 1;
+$roll_joints = true;
+$joint1 = &$roll_joints;
+$joint2 = &$joint1;
+$joint3 = &$joint2;
 
-print $x;
+print $joint1;
+print $joint2;
+print $joint3;
 ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-    </head>
-    <body>
-        
-    </body>
-</html>
