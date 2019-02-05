@@ -1,11 +1,13 @@
 <?php
-$sheep = ['a'];
+function pachmielas($stopkes) {
+    $laikas = 0;
 
-for ($i = 0; $i < 5; $i++) {
-    $sheep[$i] = &$sheep[0];
-};
+    for ($i = 0; $i < $stopkes; $i++) {
+        $laikas += 0.5 + ($laikas * 0.15);
+    };
 
-$sheep[0] = 'c';
+    return round($laikas, 2). ' valandu pachmielo!';
+}
 
-var_dump($sheep);
+print pachmielas(5);
 ?>
