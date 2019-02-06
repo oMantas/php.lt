@@ -1,17 +1,15 @@
 <?php
-$nr = null;
-$ats = null;
+$ats = 'Nera duomenu';
 
 if (isset($_POST['nr'])){
     $nr = $_POST['nr'];
-    $ats = empty($nr) ? '0' : square($nr);
+    $ats = empty($nr) ? 'Reikia ivesti sk' : square($nr);
 } 
 
 function square($x) {
-    $x *= $x;
-
-    return $x;
+    return $x *= $x;
 };
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
