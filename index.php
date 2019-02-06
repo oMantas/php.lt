@@ -18,7 +18,7 @@ if (isset($_POST['btn'])) {
             <button type='submit' name='btn' value='<?php print $nr; ?>'><?php print $nr; ?></button>
         </form>
         <?php for ($i = 0; $i < $nr; $i++): ?>
-            <img src='/img/fuckit.jpg'>
+            <img src='img/fuckit.jpg'>
         <?php endfor; ?>
     </body>
 </html>
