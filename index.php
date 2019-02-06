@@ -1,5 +1,5 @@
 <?php
-$nr = 0;
+$nr = null;
 $ats = null;
 
 if (isset($_POST['nr'])){
