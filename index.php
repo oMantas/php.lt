@@ -1,15 +1,32 @@
 <?php
-function babuska_kvepia($kvepalu_kiekis_ml) {
-    $uz_metru_uzuosi = 0;
+$nr = 0;
 
-    if ($kvepalu_kiekis_ml > 1) {
-        $kvepalu_kiekis_ml -= 10; //ml
-        $uz_metru_uzuosi += babuska_kvepia($kvepalu_kiekis_ml);
-        $uz_metru_uzuosi += $kvepalu_kiekis_ml * 0.2;
-    };
+if (isset($_POST['nr']))
+    $nr = $_POST['nr'];
+    $ats = square($nr);
 
-    return $uz_metru_uzuosi;
+function square($x) {
+    $x *= $x;
+
+    return $x;
 };
-
-print 'uz '. babuska_kvepia(30). ' metru uzuosi.';
 ?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <form method='POST'>
+            <label>
+                <span>Ka pakelti kvadratu:</span>
+                <input name='nr' type='number'>
+                <input type='submit'>
+                <h3>Ats: <?php print $ats; ?> </h3>
+            </label>
+        </form>
+    </body>
+</html>
