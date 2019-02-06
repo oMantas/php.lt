@@ -1,9 +1,10 @@
 <?php
 $nr = 0;
 
-if (isset($_POST['nr']))
+if (isset($_POST['nr'])){
     $nr = $_POST['nr'];
     $ats = square($nr);
+} 
 
 function square($x) {
     $x *= $x;
