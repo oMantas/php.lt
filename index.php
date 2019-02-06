@@ -4,7 +4,7 @@ $ats = null;
 
 if (isset($_POST['nr'])){
     $nr = $_POST['nr'];
-    $ats = empty($nr) ? ' ' : square($nr);
+    $ats = empty($nr) ? '0' : square($nr);
 } 
 
 function square($x) {
